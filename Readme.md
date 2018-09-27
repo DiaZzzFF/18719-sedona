@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dias Valeev](https://up.htmlacademy.ru/adaptive/15/user/18719).
-* Наставник: Наталья Лоскутова.
+* Наставник: [Наталья Лоскутова](https://up.htmlacademy.ru/adaptive/15/user/33515).
 
 ---
 
