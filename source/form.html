@@ -138,7 +138,7 @@
 
               <textarea class="review-form__textarea" name="review-text" id="user-review-text" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
 
-              <button class="review-form__btn" type="submit">Отправить отзыв</button>
+              <button class="review-form__btn sky-btn" type="submit">Отправить отзыв</button>
             </fieldset>
           </form>
         </section>
@@ -178,6 +178,27 @@
           </a>
         </div>
       </footer>
+
+    <!-- <<<<<<<<<<<<<<< modal >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+      <section class="modal modal-error">
+        <h2 class="modal-error__heading">Что-то пошло не так!</h2>
+        <p class="modal-error__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+
+        <button class="modal-error__btn sky-btn" type="button">Ok</button>
+      </section>
+
+      <section class="modal modal-ok">
+        <h2 class="modal-ok__heading">Ваш отзыв отправлен!</h2>
+        <p class="modal-ok__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          В ближайшее время мы опубликуем его на сайте.
+        </p>
+
+        <button class="modal-ok__btn sky-btn" type="button">Закрыть окно</button>
+      </section>
 
     </div>
   </body>
