@@ -5,8 +5,190 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <div class="wrapper">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <!-- <<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
+      <header class="header">
+        <div class="header__logo">
+          <img class="header__logo-img" src="http://placekitten.com/102/83" width="102" height="83" alt="Логотип Sedona">
+        </div>
+
+        <nav class="nav">
+          <button class="nav__toggle" type="button">Открыть / Закрыть меню</button>
+
+          <div class="nav__box">
+            <ul class="nav__list menu">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active">
+                  Главная
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="photo.html">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="form.html">
+                  Форма отзыва
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <!-- <<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+      <main class="main">
+        <h1 class="visually-hidden">City of Sedona</h1>
+
+        <section class="promo">
+          <strong class="promo__heading headline">Седона — небольшой городок в Аризоне, заслуживающий большего!</strong>
+          <p class="promo__text text">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </section>
+
+        <section class="description">
+          <h2 class="visually-hidden">Причины</h2>
+
+          <ul class="description__list">
+            <li class="description__item">
+              <h3 class="description__heading headline">Настоящий городок</h3>
+              <p class="description__text text">— №1 —</p>
+              <p class="description__text text">
+                Седона не аттракцион для туристов,
+                там течет своя жизнь
+              </p>
+
+              <div class="description__img-box">
+                <img class="description__img" src="http://placekitten.com/320/260" width="320" height="260" alt="Настоящий городок">
+              </div>
+            </li>
+
+            <li class="description__item features">
+              <ul class="features__list">
+                <li class="features__item">
+                  <div class="features__icon features__icon--house"></div>
+                  <h3 class="features__heading headline">Жилье</h3>
+                  <p class="features__text text">
+                    Рекомендуем пожить в настоящем мотеле, все как в кино!
+                  </p>
+                </li>
+                <li class="features__item">
+                  <div class="features__icon features__icon--gift"></div>
+                  <h3 class="features__heading headline">Сувениры</h3>
+                  <p class="features__text text">
+                    Не только китайского, но и местного производства!
+                  </p>
+                </li>
+                <li class="features__item">
+                  <div class="features__icon features__icon--food"></div>
+                  <h3 class="features__heading headline">Еда</h3>
+                  <p class="features__text text">
+                    Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                  </p>
+                </li>
+              </ul>
+            </li>
+
+            <li class="description__item">
+              <h3 class="description__heading headline">Там есть Мост Дьявола</h3>
+              <p class="description__text text">— №2 —</p>
+              <p class="description__text text">
+                Да, по нему можно пройти! Если вы осмелитесь, конечно
+              </p>
+
+              <div class="description__img-box">
+                <img class="description__img" src="http://placekitten.com/320/260" width="320" height="260" alt="Мост Дьявола">
+              </div>
+            </li>
+
+            <li class="description__item">
+              <h3 class="description__heading headline">Небольшая площадь</h3>
+              <p class="description__text text">— №3 —</p>
+              <p class="description__text text">
+                Все интересные места находятся очень близко
+              </p>
+            </li>
+
+            <li class="description__item">
+              <h3 class="description__heading headline">Красивая дорога</h3>
+              <p class="description__text text">— №4 —</p>
+              <p class="description__text text">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </li>
+
+            <li class="description__item">
+              <h3 class="description__heading headline">Мало туристов</h3>
+              <p class="description__text text">— №5 —</p>
+              <p class="description__text text">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="hotels">
+          <h2 class="visually-hidden">Поиск гостиницы</h2>
+          <b class="hotels__heading">Заинтересовались?</b>
+
+          <p class="hotels__text">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+
+          <a class="hotels__link" href="#">Найти гостиницу</a>
+        </section>
+
+        <section class="map">
+          <img class="map__img" src="http://placekitten.com/320/350" width="320" height="350" alt="Карта">
+        </section>
+
+      </main>
+
+    <!-- <<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+      <footer class="footer">
+        <b class="footer__hashtag">#visitsedona</b>
+
+        <section class="social">
+          <h4 class="visually-hidden">Социальные сети</h4>
+
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#" aria-label="Следите за нами в Twitter">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#" aria-label="Следите за нами в Facebook">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#" aria-label="Следите за нами в YouTube">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="footer__copyright">
+          <p class="footer__text">Разработано</p>
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-img" src="http://placekitten.com/27/34" width="27" height="34" alt="HTML Academy">
+          </a>
+        </div>
+      </footer>
+
+    </div>
   </body>
 </html>
