@@ -10,11 +10,11 @@
     <!-- <<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
       <header class="header">
-        <div class="header__logo">
+        <a class="header__logo" href="index.html">
           <img class="header__logo-img" src="http://placekitten.com/102/83" width="102" height="83" alt="Логотип Sedona">
-        </div>
+        </a>
 
-        <nav class="nav">
+        <nav class="header__nav nav">
           <button class="nav__toggle" type="button">Открыть / Закрыть меню</button>
 
           <div class="nav__box">
@@ -47,9 +47,9 @@
     <!-- <<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
       <main class="main">
-        <section class="photo-and-video">
-          <h2 class="photo-and-video__heading">Фото и видео</h2>
-          <p class="photo-and-video__text">
+        <section class="inner-promo">
+          <h2 class="inner-promo__heading headline">Фото и видео</h2>
+          <p class="inner-promo__text">
             Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
           </p>
         </section>
@@ -57,50 +57,73 @@
         <section class="gallery">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <div class="gallery__img-box">
+              <a class="gallery__img-box" href="#">
                 <img class="gallery__img" src="http://placekitten.com/320/280" width="320" height="280" alt="Неродные просторы">
-              </div>
+              </a>
               <h3 class="gallery__heading">Неродные просторы</h3>
               <p class="gallery__author">Автор фото: Борис</p>
+
+              <button class="gallery_btn" type="button"></button>
               <p class="gallery__likes">1350</p>
             </li>
 
             <li class="gallery__item">
-              <div class="gallery__img-box">
+              <a class="gallery__img-box" href="#">
                 <img class="gallery__img" src="http://placekitten.com/320/280" width="320" height="280" alt="Местная растительность">
-              </div>
+              </a>
               <h3 class="gallery__heading">Местная растительность</h3>
               <p class="gallery__author">Автор фото: Сергей</p>
+
+              <button class="gallery_btn" type="button" aria-label="кнопка Like"></button>
               <p class="gallery__likes">143</p>
             </li>
 
             <li class="gallery__item">
-              <div class="gallery__img-box">
+              <a class="gallery__img-box" href="#">
                 <img class="gallery__img" src="http://placekitten.com/320/280" width="320" height="280" alt="Дорога на север">
-              </div>
+              </a>
               <h3 class="gallery__heading">Дорога на север</h3>
               <p class="gallery__author">Автор фото: Петр</p>
+
+              <button class="gallery_btn" type="button" aria-label="кнопка Like"></button>
               <p class="gallery__likes">96</p>
             </li>
 
             <li class="gallery__item">
-              <div class="gallery__img-box">
+              <a class="gallery__img-box" href="#">
                 <img class="gallery__img" src="http://placekitten.com/320/280" width="320" height="280" alt="Мост Дьявола">
-              </div>
+              </a>
               <h3 class="gallery__heading">Мост Дьявола</h3>
               <p class="gallery__author">Автор фото: Антон</p>
+
+              <button class="gallery_btn" type="button" aria-label="кнопка Like"></button>
               <p class="gallery__likes">254</p>
             </li>
           </ul>
         </section>
 
         <section class="presentation">
-          <b class="presentation__heading">Все еще сомневаетесь?</b>
+          <b class="presentation__heading headline">Все еще сомневаетесь?</b>
           <p class="presentation__text">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
 
-          <video class="presentation__video" width="320" height="201" controls="controls" poster="http://placekitten.com/320/201"></video>
+          <div class="presentation__video">
+            <div class="presentation__img-box">
+              <img class="presentation__img" src="http://placekitten.com/320/201" width="320" height="201" alt="Видеопрезентация">
+            </div>
+
+            <div class="presentation__scrollbar">
+              <div class="presentation__range"></div>
+              <div class="presentation__current"></div>
+            </div>
+
+            <div class="presentation__controls">
+              <button class="presentation__replay" type="button" aria-label="Переиграть"></button>
+              <button class="presentation__subtitles" type="button" aria-label="Субтитры"></button>
+              <button class="presentation__fullscreen" type="button" aria-label="Полноэкранный режим"></button>
+            </div>
+          </div>
         </section>
       </main>
 
@@ -133,7 +156,7 @@
 
         <div class="footer__copyright">
           <p class="footer__text">Разработано</p>
-          <a class="footer__logo" href="#">
+          <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="footer__logo-img" src="http://placekitten.com/27/34" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
