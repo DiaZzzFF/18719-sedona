@@ -5,4 +5,7 @@
   list-style: none;
 }
 
-
+/* временно */
+@mixin temporarily {
+  outline: 1px solid red;
+}
