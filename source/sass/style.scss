@@ -1,0 +1,95 @@
+@import "../css/normalize.css";
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"), local("PTSans-Regular"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+       url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* Позиционирование */
+
+  /* Блочная модель */
+  margin: 0;
+  padding: 0;
+
+  /* Типографика */
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-align: center;
+
+  /* Оформление */
+  background-color: rgb(255, 255, 255);
+
+  /* Анимация */
+
+  /* Разное */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+/* временно */
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
+
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/nav.scss";
+@import "../sass/blocks/menu.scss";
+
+
+
