@@ -5,6 +5,22 @@
   list-style: none;
 }
 
+@mixin headline-fix {
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+}
+
+@mixin text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: $black-regular;
+}
+
 /* временно */
 @mixin temporarily {
   outline: 1px solid red;

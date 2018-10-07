@@ -1,4 +1,4 @@
-@import "../css/normalize.css";
+@import "normalize.css";
 
 @font-face {
   font-family: "PT Sans";
@@ -87,9 +87,18 @@ input[type="radio"].visually-hidden {
 @import "../sass/variables.scss";
 @import "../sass/mixins.scss";
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/nav.scss";
 @import "../sass/blocks/menu.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@import "../sass/blocks/promo.scss";
+@import "../sass/blocks/inner-promo.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @import "../sass/blocks/footer.scss";
 @import "../sass/blocks/social.scss";
