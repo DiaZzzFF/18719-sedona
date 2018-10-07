@@ -1,0 +1,59 @@
+.features {
+  @include temporarily;
+}
+
+.features__list {
+  @include ul-style;
+
+  background-color: $white;
+}
+
+.features__item {
+  padding: 0 20px;
+
+  &:last-of-type {
+    padding-bottom: 37px;
+  }
+}
+
+.features__icon {
+  float: left;
+
+  width: 40px;
+  height: 40px;
+  margin-top: 26px;
+  margin-right: 10px;
+
+  background-color: $sky;
+
+  &--gift {
+    margin-top: 17px;
+  }
+
+  &--food {
+    margin-top: 23px;
+  }
+}
+
+.features__heading {
+  @include headline-fix;
+
+  padding-top: 35px;
+
+  text-align: left;
+
+  &--second,
+  &--third {
+    padding-top: 28px;
+  }
+}
+
+.features__text {
+  @include text-2;
+
+  margin-top: 14px;
+  margin-left: 50px;
+
+  text-align: left;
+  color: $black-regular;
+}

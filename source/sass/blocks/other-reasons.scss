@@ -1,0 +1,35 @@
+.other-reasons {
+  @include temporarily;
+}
+
+.other-reasons__list {
+  @include ul-style;
+
+  padding: 0 20px;
+
+  background-color: $bg-other-reasons;
+}
+
+.other-reasons__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+.other-reasons__heading {
+  @include headline-fix;
+
+  padding-top: 27px;
+}
+
+.other-reasons__text {
+  @include text-2;
+
+  margin-top: 9px;
+  padding: 0 15px;
+
+  color: $black-regular;
+
+  &--second {
+    margin-top: 15px;
+    margin-bottom: 26px;
+  }
+}
