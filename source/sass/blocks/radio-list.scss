@@ -1,0 +1,26 @@
+.radio-list {
+  @include ul-style;
+}
+
+.radio-list__item {
+  display: flex;
+  align-items: center;
+
+  min-height: 56px;
+  margin-bottom: 13px;
+
+  text-align: left;
+
+  &:first-of-type {
+    margin-top: 23px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 27px;
+  }
+}
+
+.radio-list__label {
+  text-transform: none;
+}
+

@@ -36,13 +36,26 @@
   align-items: center;
 
   width: 280px;
+  min-height: 58px;
   margin: 0 auto;
   padding: 16px 0;
 
   font-size: 21px;
+  font-weight: 700;
   color: $white;
+  text-transform: uppercase;
 
   background-color: $sky;
+  border: none;
+}
+
+@mixin placeholder {
+  padding-left: 22px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
 }
 
 /* временно */
