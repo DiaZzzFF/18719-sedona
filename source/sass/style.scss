@@ -95,14 +95,25 @@ input[type="radio"].visually-hidden {
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* =============== index.html ===== */
+
 @import "../sass/blocks/promo.scss";
-@import "../sass/blocks/inner-promo.scss";
 
 @import "../sass/blocks/description.scss";
 @import "../sass/blocks/features.scss";
 @import "../sass/blocks/other-reasons.scss";
 
 @import "../sass/blocks/hotels.scss";
+
+/* ===== photo.html + form.html ===== */
+
+@import "../sass/blocks/inner-promo.scss";
+
+/* =============== photo.html ===== */
+
+@import "../sass/blocks/gallery.scss";
+
+@import "../sass/blocks/presentation.scss";
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 

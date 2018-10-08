@@ -7,6 +7,7 @@
   z-index: 5;
 
   display: flex;
+  justify-content: center;
 
   height: 56px;
 }
@@ -23,10 +24,16 @@
 }
 
 .nav__toggle {
-  width: 22px;
-  height: 23px;
+  position: absolute;
+  top: 17px;
+  right: 20px;
 
-  background-color: $white;
+  display: block;
+  width: 23px;
+  height: 21px;
+
+  background-color: $sky;
+  border: none;
 }
 
 

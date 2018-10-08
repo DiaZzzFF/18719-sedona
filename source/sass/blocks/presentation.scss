@@ -1,0 +1,44 @@
+.presentation {
+  @include temporarily;
+
+  padding: 33px 0;
+}
+
+.presentation__heading {
+  @include headline-fix;
+
+}
+
+.presentation__text {
+  @include text;
+
+  padding: 26px 25px 35px;
+
+  line-height: 24px;
+}
+
+.presentation__box {
+  position: relative;
+}
+
+.presentation__scrollbar,
+.presentation__controls {
+  width: 280px;
+  margin: 0 20px;
+}
+
+.presentation__scrollbar {
+  position: absolute;
+  top: -45px;
+
+  height: 45px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.presentation__controls {
+  height: 66px;
+
+  background-color: rgb(245, 245, 245);
+}
+
