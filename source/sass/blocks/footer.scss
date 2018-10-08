@@ -1,0 +1,47 @@
+.footer {
+  min-height: 243px;
+  padding-top: 36px;
+
+  background-color: $white;
+
+  @include temporarily;
+}
+
+.footer__hashtag {
+  display: block;
+  padding-bottom: 35px;
+
+  font-size: 21px;
+}
+
+.footer__social {
+  padding-bottom: 40px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__logo {
+  width: 27px;
+  height: 34px;
+}
+
+.footer__logo-svg {
+  &:hover {
+    fill: $sky;
+  }
+
+  &:disabled {
+    fill: rgb(178, 178, 178);
+  }
+}
+
+
+

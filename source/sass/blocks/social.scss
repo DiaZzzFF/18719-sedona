@@ -1,0 +1,44 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include ul-style;
+
+  width: 150px;
+
+  background-color: $white;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 46px;
+  height: 48px;
+
+  background-color: $sky;
+
+  &:hover {
+    background-color: $dark-sky;
+  }
+
+  &:disabled {
+    background-color: $darkest-sky;
+  }
+
+  &:disabled .social__link-svg {
+    fill-opacity: 0.3;
+  }
+}
+
+.social__link-svg {
+  fill: $white;
+}
+
+
+

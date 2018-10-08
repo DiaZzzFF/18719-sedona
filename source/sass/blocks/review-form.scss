@@ -1,0 +1,92 @@
+.review-form {
+  @include temporarily;
+}
+
+.review-form__item {
+  margin: 0;
+  padding: 0 20px;
+
+  border: none;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.102);
+
+  &:last-of-type {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+  }
+
+  &--name {
+    padding-bottom: 25px;
+  }
+
+  &--contact {
+    padding-bottom: 28px;
+  }
+}
+
+.review-form__legend {
+  @include headline-fix;
+
+  padding-top: 18px;
+
+  &--contact {
+    padding-bottom: 8px;
+  }
+}
+
+.review-form__label {
+  @include text;
+
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+
+  &--name {
+    min-height: 58px;
+    margin-top: 20px;
+  }
+
+  &--text-top {
+    display: block;
+    padding-top: 12px;
+    padding-left: 22px;
+  }
+}
+
+.review-form__input {
+  width: 100%;
+  height: 58px;
+
+  &--name {
+    margin-left: 14px;
+  }
+
+  &--contact {
+    margin-top: 7px;
+  }
+
+  &::placeholder {
+    @include placeholder;
+  }
+}
+
+.review-form__textarea {
+  width: 100%;
+  min-height: 160px;
+
+  margin-top: 17px;
+  margin-bottom: 44px;
+
+  &::placeholder {
+    @include placeholder;
+
+    padding-top: 14px;
+  }
+}
+
+.review-form__btn {
+  @include sky-btn;
+
+  margin-bottom: 35px;
+}
+

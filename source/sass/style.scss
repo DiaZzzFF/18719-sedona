@@ -1,0 +1,134 @@
+@import "normalize.css";
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"), local("PTSans-Regular"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+       url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* Позиционирование */
+
+  /* Блочная модель */
+  margin: 0;
+  padding: 0;
+
+  /* Типографика */
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-align: center;
+
+  /* Оформление */
+  background-color: rgb(255, 255, 255);
+
+  /* Анимация */
+
+  /* Разное */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+/* временно */
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/nav.scss";
+@import "../sass/blocks/menu.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* =============== index.html (main) ===== */
+
+@import "../sass/blocks/promo.scss";
+
+@import "../sass/blocks/description.scss";
+@import "../sass/blocks/features.scss";
+@import "../sass/blocks/other-reasons.scss";
+
+@import "../sass/blocks/hotels.scss";
+
+/* ===== photo.html + form.html (main) ===== */
+
+@import "../sass/blocks/inner-promo.scss";
+
+/* =============== photo.html (main) ===== */
+
+@import "../sass/blocks/gallery.scss";
+
+@import "../sass/blocks/presentation.scss";
+
+/* =============== form.html (main) ===== */
+
+@import "../sass/blocks/review-form.scss";
+@import "../sass/blocks/radio-list.scss";
+@import "../sass/blocks/check-list.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/social.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< modal >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@import "../sass/blocks/modal.scss";
+
+
+

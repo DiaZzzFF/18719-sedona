@@ -1,0 +1,26 @@
+.check-list {
+  @include ul-style;
+}
+
+.check-list__item {
+  display: flex;
+  align-items: center;
+
+  min-height: 56px;
+  margin-bottom: 24px;
+
+  text-align: left;
+
+  &:first-of-type {
+    margin-top: 17px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 25px;
+  }
+}
+
+.check-list__label {
+  text-transform: none;
+}
+

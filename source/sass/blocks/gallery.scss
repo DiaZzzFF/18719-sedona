@@ -1,0 +1,57 @@
+.gallery {
+  @include temporarily;
+}
+
+.gallery__list {
+  @include ul-style;
+}
+
+.gallery__item {
+  padding: 23px 20px 18px;
+
+  text-align: left;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.102);
+
+  &:last-of-type {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+  }
+}
+
+.gallery__heading {
+  @include headline-fix;
+
+  padding-top: 14px;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery__author {
+  @include text;
+
+  line-height: 24px;
+  text-transform: none;
+}
+
+.gallery__likes-box {
+  display: flex;
+
+  margin-top: 7px;
+}
+
+.gallery__btn {
+  display: block;
+  width: 22px;
+  height: 21px;
+  margin-right: 16px;
+}
+
+.gallery__likes {
+  @include text;
+
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+}
+
