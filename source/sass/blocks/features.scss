@@ -5,15 +5,13 @@
 .features__list {
   @include ul-style;
 
+  padding-bottom: 37px;
+
   background-color: $white;
 }
 
 .features__item {
   padding: 0 20px;
-
-  &:last-of-type {
-    padding-bottom: 37px;
-  }
 }
 
 .features__icon {
@@ -56,4 +54,53 @@
 
   text-align: left;
   color: $black-regular;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: flex;
+
+    padding-bottom: 0;
+  }
+
+  .features__item {
+    width: 256px;
+    min-height: 330px;
+
+    &--inverted {
+      order: 1;
+    }
+  }
+
+  .features__icon {
+    float: none;
+
+    width: 77px;
+    height: 77px;
+    margin: 60px auto 27px;
+  }
+
+  .features__heading {
+    padding-top: 0;
+
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .features__text {
+    width: 165px;
+    margin: 21px auto 0;
+
+    text-align: center;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .features__item {
+    width: 400px;
+  }
 }

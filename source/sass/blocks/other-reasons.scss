@@ -33,3 +33,54 @@
     margin-bottom: 26px;
   }
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .other-reasons__list {
+    display: flex;
+
+    padding: 0;
+  }
+
+  .other-reasons__item {
+    width: 256px;
+    min-height: 256px;
+
+    border: none;
+  }
+
+  .other-reasons__heading {
+    width: 130px;
+    margin: 0 auto;
+    padding-top: 45px;
+
+    font-size: 21px;
+  }
+
+  .other-reasons__text {
+    width: 158px;
+    margin: 10px auto 0;
+    padding: 0;
+
+    &--second {
+      margin-top: 21px;
+    }
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .other-reasons__item {
+    width: 400px;
+  }
+
+  .other-reasons__text {
+    width: 300px;
+
+    &--fix {
+      width: 270px;
+    }
+  }
+}
