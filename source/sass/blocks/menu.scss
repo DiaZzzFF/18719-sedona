@@ -6,15 +6,14 @@
   @include temporarily;
 }
 
-.menu__item {
-  padding: 8px 0;
-}
-
 .menu__link {
+  display: block;
+  padding: 8px 20px;
+
   line-height: 40px;
   color: $white;
 }
 
-
-
-
+@media (min-width: $tablet-width) {
+  
+}

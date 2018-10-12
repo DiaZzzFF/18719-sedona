@@ -1,6 +1,8 @@
 .promo {
   @include temporarily;
 
+  @include mobile-grid;
+
   padding-bottom: 26px;
 }
 
@@ -17,8 +19,12 @@
 }
 
 .promo__bg-text {
-  padding: 0 20px;
-  padding-top: 90px;
+  min-height: 389px;
+
+  background-image: url("../../img/text-sedona-index.svg");
+  background-repeat: no-repeat;
+  background-position: center 90px;
+  background-size: 280px auto;
 }
 
 .promo__bg-decoration {
@@ -30,6 +36,7 @@
 
   background-color: transparent;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 328px;
 }
@@ -51,4 +58,57 @@
   @include text;
 }
 
+@media (min-width: $tablet-width) {
+  .promo {
+    width: 768px;
+    padding-bottom: 50px;
+  }
 
+  .promo__bg {
+    min-height: 518px;
+    margin-bottom: 50px;
+
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
+
+  .promo__bg-text {
+    min-height: 518px;
+
+    background-position: center 77px;
+    background-size: 460px auto;
+  }
+
+  .promo__bg-decoration {
+    width: 100%;
+    min-height: 57px;
+
+    background-image: url("../../img/bg-intro-triangle-tablet.svg");
+    background-size: 768px;
+  }
+
+  .promo__heading {
+    width: 625px;
+    margin-bottom: 27px;
+
+    font-size: 21px;
+  }
+
+  .promo__text {
+    width: 625px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 1200px;
+  }
+
+  .promo__bg {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+  }
+
+  .promo__bg-decoration {
+    background-image: url("../../img/bg-intro-triangle-desktop.svg");
+    background-size: 1200px;
+  }
+}

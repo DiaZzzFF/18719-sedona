@@ -1,5 +1,9 @@
 .nav {
+  @include mobile-grid;
+
   background-color: $white;
+
+  @include temporarily;
 }
 
 .nav__box-2 {
@@ -10,6 +14,8 @@
   justify-content: center;
 
   height: 56px;
+
+  background-color: $white;
 }
 
 .header__logo {
@@ -35,7 +41,3 @@
   background-color: $sky;
   border: none;
 }
-
-
-
-
