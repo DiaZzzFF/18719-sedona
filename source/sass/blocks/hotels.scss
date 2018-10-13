@@ -41,6 +41,8 @@
   background-repeat: no-repeat;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 @media (min-width: $tablet-width) {
   .hotels {
     width: 768px;
@@ -76,6 +78,8 @@
     background-image: url("../../img/bg-map-tablet@1x.jpg");
   }
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (min-width: $desktop-width) {
   .hotels {

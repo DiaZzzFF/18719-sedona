@@ -1,7 +1,9 @@
 .presentation {
-  @include temporarily;
+  @include mobile-grid;
 
   padding: 33px 0;
+
+  @include temporarily;
 }
 
 .presentation__heading {
@@ -40,3 +42,11 @@
 
   background-color: rgb(245, 245, 245);
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
