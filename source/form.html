@@ -86,19 +86,28 @@
           <fieldset class="review-form__item review-form__item--contact">
             <h3 class="review-form__legend review-form__legend--contact headline">Контактная информация:</h3>
 
-            <label class="review-form__label review-form__label--text-top" for="user-tel">
-              Контактный телефон*:
-            </label>
-            <input class="review-form__input review-form__input--contact" type="tel" name="tel" id="user-tel" placeholder="Введите телефон">
+            <div class="review-form__box">
+              <div class="review-form__box-1">
+                <label class="review-form__label review-form__label--text-top review-form__label--tel" for="user-tel">
+                  Контактный телефон*:
+                </label>
+                <label class="review-form__label review-form__label--text-top review-form__label--tel-desktop" for="user-tel">
+                  Телефон*:
+                </label>
+                <input class="review-form__input review-form__input--contact" type="tel" name="tel" id="user-tel" placeholder="Введите телефон">
+              </div>
 
-            <label class="review-form__label review-form__label--text-top" for="user-email">
-              Электронная почта*:
-            </label>
-            <input class="review-form__input review-form__input--contact" type="email" name="email" id="user-email" placeholder="Введите e-mail">
+              <div class="review-form__box-2">
+                <label class="review-form__label review-form__label--text-top review-form__label--contact-email" for="user-email">
+                  Электронная почта*:
+                </label>
+                <input class="review-form__input review-form__input--contact" type="email" name="email" id="user-email" placeholder="Введите e-mail">
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="review-form__item">
-            <h3 class="review-form__legend headline">Ваше общее впечатление:</h3>
+          <fieldset class="review-form__item review-form__item--imp">
+            <h3 class="review-form__legend review-form__legend--imp headline">Ваше общее впечатление:</h3>
 
             <ul class="review-form__radio-list radio-list">
               <li class="radio-list__item">
@@ -118,8 +127,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="review-form__item">
-            <h3 class="review-form__legend headline">Посещенные достопримечательности:</h3>
+          <fieldset class="review-form__item review-form__item--travel">
+            <h3 class="review-form__legend review-form__legend--travel headline">Посещенные достопримечательности:</h3>
 
             <ul class="review-form__check-list check-list">
               <li class="check-list__item">
@@ -141,12 +150,16 @@
             </ul>
           </fieldset>
 
-          <fieldset class="review-form__item">
-            <h3 class="review-form__legend headline">Опишите свои эмоции:</h3>
+          <fieldset class="review-form__item review-form__item--emo">
+            <h3 class="review-form__legend review-form__legend--emo headline">Опишите свои эмоции:</h3>
 
             <textarea class="review-form__textarea" name="review-text" id="user-review-text" placeholder="Опишите подробно все свои восторги"></textarea>
 
-            <button class="review-form__btn sky-btn" type="submit">Отправить отзыв</button>
+            <div class="review-form__btn-box">
+              <button class="review-form__btn sky-btn" type="submit">Отправить отзыв</button>
+              <p class="review-form__text">* — обязательные поля</p>
+            </div>
+
           </fieldset>
         </form>
       </section>

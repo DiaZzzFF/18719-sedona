@@ -68,7 +68,7 @@
 @media (min-width: $tablet-width) {
   .inner-promo {
     width: 768px;
-    padding-bottom: 76px;
+    padding-bottom: 71px;
 
     &--photo {
       padding-bottom: 66px;
@@ -114,7 +114,11 @@
 @media (min-width: $desktop-width) {
   .inner-promo {
     width: 1200px;
-    padding-bottom: 61px;
+    padding-bottom: 56px;
+
+    &--photo {
+      padding-bottom: 68px;
+    }
   }
 
   .inner-promo__bg {

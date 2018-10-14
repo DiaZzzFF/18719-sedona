@@ -1,5 +1,7 @@
 .check-list {
   @include ul-style;
+
+  @include temporarily;
 }
 
 .check-list__item {
@@ -22,4 +24,53 @@
 
 .check-list__label {
   text-transform: none;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .check-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 95px;
+    margin-bottom: 36px;
+  }
+
+  .check-list__item {
+    width: 200px;
+    margin: 0;
+    margin-bottom: 32px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .check-list {
+    padding: 0;
+    margin-bottom: 66px;
+  }
+
+  .check-list__item {
+    width: auto;
+    margin: 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
