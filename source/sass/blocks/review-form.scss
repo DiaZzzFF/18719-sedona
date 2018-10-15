@@ -1,6 +1,5 @@
 .review-form {
   @include mobile-grid;
-
   @include temporarily;
 }
 
@@ -324,6 +323,7 @@
   .review-form__box {
     display: flex;
   }
+
   .review-form__box-1,
   .review-form__box-2{
     display: flex;

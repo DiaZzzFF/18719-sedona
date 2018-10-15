@@ -18,7 +18,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -88,11 +90,9 @@ input[type="radio"].visually-hidden {
 /* =============== index.html (main) ===== */
 
 @import "../sass/blocks/promo.scss";
-
 @import "../sass/blocks/description.scss";
 @import "../sass/blocks/features.scss";
 @import "../sass/blocks/other-reasons.scss";
-
 @import "../sass/blocks/hotels.scss";
 
 /* ===== photo.html + form.html (main) ===== */
@@ -102,7 +102,6 @@ input[type="radio"].visually-hidden {
 /* =============== photo.html (main) ===== */
 
 @import "../sass/blocks/gallery.scss";
-
 @import "../sass/blocks/presentation.scss";
 
 /* =============== form.html (main) ===== */
