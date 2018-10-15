@@ -18,14 +18,14 @@
   background-color: $white;
 }
 
-.header__logo {
+.nav__logo {
   position: absolute;
 
   display: block;
   width: 102px;
 }
 
-.header__logo-img {
+.nav__logo-img {
   height: 83px;
 }
 
@@ -40,4 +40,35 @@
 
   background-color: $sky;
   border: none;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .nav {
+    width: 768px;
+  }
+
+  .nav__box-2 {
+    position: absolute;
+    top: -56px;
+
+    width: inherit;
+  }
+
+  .nav__logo {
+    top: 56px;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .nav {
+    width: 1200px;
+  }
 }
