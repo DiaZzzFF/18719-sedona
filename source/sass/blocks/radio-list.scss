@@ -24,3 +24,14 @@
   text-transform: none;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .radio-list__item {
+    margin-bottom: 22px;
+
+    &:first-of-type {
+      margin-top: 59px;
+    }
+  }
+}

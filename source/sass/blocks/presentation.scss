@@ -1,23 +1,39 @@
 .presentation {
-  @include temporarily;
+  @include mobile-grid;
 
   padding: 33px 0;
+
+  @include temporarily;
 }
 
 .presentation__heading {
   @include headline-fix;
+
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 26px;
 }
 
 .presentation__text {
   @include text;
 
-  padding: 26px 25px 35px;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 
   line-height: 24px;
 }
 
+.presentation__img {
+  width: 320px;
+  height: 201px;
+  margin: 0 auto;
+}
+
 .presentation__box {
   position: relative;
+  z-index: 1;
 }
 
 .presentation__scrollbar,
@@ -29,6 +45,7 @@
 .presentation__scrollbar {
   position: absolute;
   top: -45px;
+  z-index: 2;
 
   height: 45px;
 
@@ -41,3 +58,101 @@
   background-color: rgb(245, 245, 245);
 }
 
+.presentation__replay {
+  width: 16px;
+  height: 20px;
+}
+
+.presentation__subtitles {
+  width: 32px;
+  height: 20px;
+}
+
+.presentation__fullscreen {
+  width: 20px;
+  height: 20px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .presentation {
+    width: 768px;
+    padding: 66px 60px 40px;
+  }
+
+  .presentation__heading {
+    width: 400px;
+    margin-bottom: 31px;
+
+    font-size: 30px;
+  }
+
+  .presentation__text {
+    width: 420px;
+    margin-bottom: 73px;
+  }
+
+  .presentation__img {
+    height: 500px;
+  }
+
+  .presentation__scrollbar {
+    top: -93px;
+
+    width: 648px;
+    min-height: 93px;
+    margin: 0;
+  }
+
+  .presentation__controls {
+    position: absolute;
+    top: -93px;
+
+    width: 648px;
+    min-height: 93px;
+    margin: 0;
+
+    background-color: transparent;
+  }
+
+  .presentation__replay,
+  .presentation__subtitles,
+  .presentation__fullscreen {
+    position: absolute;
+    top: 36px;
+    z-index: 2;
+
+    background-color: $white;
+  }
+
+  .presentation__replay {
+    left: 35px;
+  }
+
+  .presentation__subtitles {
+    right: 124px;
+  }
+
+  .presentation__fullscreen {
+    right: 41px;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .presentation {
+    width: 1200px;
+    padding: 70px 200px 85px;
+  }
+
+  .presentation__text {
+    margin-bottom: 71px;
+  }
+
+  .presentation__scrollbar,
+  .presentation__controls {
+    width: 800px;
+  }
+}

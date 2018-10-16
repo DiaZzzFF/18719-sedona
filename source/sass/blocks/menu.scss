@@ -7,14 +7,63 @@
 }
 
 .menu__item {
-  padding: 8px 0;
+  &--mobile-none {
+    display: none;
+  }
 }
 
 .menu__link {
+  display: block;
+  padding: 8px 20px;
+
   line-height: 40px;
   color: $white;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+@media (min-width: $tablet-width) {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    background-color: $white;
+  }
 
+  .menu__item {
+    &--mobile-none {
+      display: block;
+      width: 150px;
+      height: 56px;
+    }
+  }
+
+  .menu__link {
+    min-width: 150px;
+    min-height: 56px;
+    padding-top: 13px;
+
+    font-size: 14px;
+    line-height: inherit;
+    color: $black;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .menu {
+    padding: 0 43px;
+  }
+
+  .menu__item {
+    &--mobile-none {
+      width: 188px;
+    }
+  }
+
+  .menu__link {
+    min-width: 188px;
+  }
+}

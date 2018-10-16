@@ -2,18 +2,14 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans"), local("PTSans-Regular"),
-       url("../fonts/ptsans.woff2") format("woff2"),
-       url("../fonts/ptsans.woff") format("woff");
+  src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans Bold"), local("PTSans-Bold"),
-       url("../fonts/ptsansbold.woff2") format("woff2"),
-       url("../fonts/ptsansbold.woff") format("woff");
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -22,7 +18,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -30,6 +28,7 @@ body {
   /* Позиционирование */
 
   /* Блочная модель */
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -78,18 +77,11 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-/* временно */
-.wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
 @import "../sass/variables.scss";
 @import "../sass/mixins.scss";
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-@import "../sass/blocks/header.scss";
 @import "../sass/blocks/nav.scss";
 @import "../sass/blocks/menu.scss";
 
@@ -98,11 +90,9 @@ input[type="radio"].visually-hidden {
 /* =============== index.html (main) ===== */
 
 @import "../sass/blocks/promo.scss";
-
 @import "../sass/blocks/description.scss";
 @import "../sass/blocks/features.scss";
 @import "../sass/blocks/other-reasons.scss";
-
 @import "../sass/blocks/hotels.scss";
 
 /* ===== photo.html + form.html (main) ===== */
@@ -112,7 +102,6 @@ input[type="radio"].visually-hidden {
 /* =============== photo.html (main) ===== */
 
 @import "../sass/blocks/gallery.scss";
-
 @import "../sass/blocks/presentation.scss";
 
 /* =============== form.html (main) ===== */
@@ -129,6 +118,3 @@ input[type="radio"].visually-hidden {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< modal >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @import "../sass/blocks/modal.scss";
-
-
-

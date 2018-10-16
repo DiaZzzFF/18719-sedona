@@ -1,5 +1,6 @@
 .description {
   @include temporarily;
+  @include mobile-grid;
 }
 
 .description__list {
@@ -7,11 +8,15 @@
 }
 
 .description__item {
-  background-color: $sky;
-
-  &--relative {
+  &--line-1 {
     position: relative;
   }
+}
+
+.description__text-box {
+  padding-bottom: 40px;
+
+  background-color: $sky;
 }
 
 .description__bg-decoration {
@@ -22,7 +27,7 @@
   min-height: 16px;
 
   background-color: transparent;
-  background-image: url("../../img/bg-triangle.svg");
+  background-image: url("../img/bg-triangle.svg");
   background-position: bottom;
 }
 
@@ -48,8 +53,83 @@
 
   &--second {
     padding-top: 15px;
-    margin-bottom: 40px;
   }
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+@media (min-width: $tablet-width) {
+  .description {
+    width: 768px;
+  }
+
+  .description__item--line-1,
+  .description__item--line-3 {
+    display: flex;
+  }
+
+  .description__text-box {
+    flex-grow: 0;
+
+    width: 256px;
+    margin-bottom: 0;
+
+    &--inverted {
+      order: 1;
+    }
+  }
+
+  .description__heading {
+    width: 151px;
+    margin: 0 auto;
+    padding-top: 45px;
+
+    font-size: 21px;
+  }
+
+  .description__text {
+    width: 210px;
+    margin: 0 auto;
+    padding-top: 10px;
+
+    &--second {
+      padding-top: 21px;
+    }
+  }
+
+  .description__img-box {
+    flex-grow: 1;
+  }
+
+  .description__img {
+    height: 256px;
+  }
+
+  .description__bg-decoration {
+    display: none;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .description {
+    width: 1200px;
+  }
+
+  .description__text-box {
+    width: 400px;
+  }
+
+  .description__heading {
+    padding-top: 52px;
+  }
+
+  .description__text {
+    width: 310px;
+  }
+
+  .description__text--second {
+    width: 270px;
+  }
+}

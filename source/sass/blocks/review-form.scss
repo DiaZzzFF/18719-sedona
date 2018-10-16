@@ -1,4 +1,5 @@
 .review-form {
+  @include mobile-grid;
   @include temporarily;
 }
 
@@ -26,10 +27,14 @@
 .review-form__legend {
   @include headline-fix;
 
-  padding-top: 18px;
+  margin-top: 18px;
 
   &--contact {
     padding-bottom: 8px;
+  }
+
+  &--emo {
+    margin-bottom: 17px;
   }
 }
 
@@ -50,6 +55,10 @@
     display: block;
     padding-top: 12px;
     padding-left: 22px;
+  }
+
+  &--tel-desktop {
+    display: none;
   }
 }
 
@@ -74,7 +83,6 @@
   width: 100%;
   min-height: 160px;
 
-  margin-top: 17px;
   margin-bottom: 44px;
 
   &::placeholder {
@@ -90,3 +98,262 @@
   margin-bottom: 35px;
 }
 
+.review-form__text {
+  display: none;
+
+  @include text;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    width: 768px;
+    padding: 0 60px;
+  }
+
+  .review-form__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review-form__item {
+    padding: 0;
+
+    border: none;
+
+    &--name {
+      order: 1;
+
+      width: 50%;
+      padding-left: 58px;
+      margin-bottom: 70px;
+
+      text-align: left;
+
+      border-left: 1px solid rgba(0, 0, 0, 0.102);
+    }
+
+    &--contact {
+      order: 2;
+
+      width: 100%;
+      margin-bottom: 53px;
+    }
+
+    &--imp {
+      order: 0;
+
+      width: 50%;
+
+      text-align: left;
+    }
+
+    &--travel {
+      order: 3;
+
+      width: 100%;
+    }
+
+    &--emo {
+      order: 4;
+
+      width: 100%;
+      padding-bottom: 60px;
+    }
+  }
+
+  .review-form__legend {
+    margin: 0;
+    padding: 0;
+
+    font-size: 21px;
+
+    &--travel {
+      width: 400px;
+      margin: 0 auto 42px;
+    }
+
+    &--emo {
+      margin-bottom: 57px;
+    }
+
+    &--contact,
+    &--travel,
+    &--emo {
+      position: relative;
+    }
+
+    &--contact::before,
+    &--contact::after,
+    &--travel::before,
+    &--travel::after,
+    &--emo::before,
+    &--emo::after {
+      content: "";
+
+      position: absolute;
+      top: 12px;
+
+      width: 125px;
+      height: 1px;
+
+      background-color: rgba(0, 0, 0, 0.102);
+    }
+
+    &--contact::before,
+    &--emo::before {
+      left: 0;
+    }
+
+    &--contact::after,
+    &--emo::after {
+      right: 0;
+    }
+
+    &--travel::before {
+      top: 25px;
+      left: -124px;
+    }
+
+    &--travel::after {
+      top: 25px;
+      right: -124px;
+    }
+  }
+
+  .review-form__label {
+    &--name:first-of-type {
+      margin-top: 57px;
+    }
+
+    &--text-top {
+      display: block;
+      padding-top: 24px;
+      padding-left: 22px;
+    }
+
+    &--tel-desktop {
+      display: none;
+    }
+  }
+
+  .review-form__textarea {
+    margin-bottom: 50px;
+  }
+
+  .review-form__btn-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review-form__btn {
+    width: 324px;
+    margin: 0;
+  }
+
+  .review-form__text {
+    align-self: center;
+
+    display: block;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .review-form {
+    width: 1200px;
+    padding: 0 120px;
+  }
+
+  .review-form__item {
+    &--name {
+      width: 50%;
+      padding-left: 79px;
+      margin-bottom: 68px;
+    }
+
+    &--contact {
+      display: flex;
+      flex-wrap: nowrap;
+
+      width: 960px;
+    }
+
+    &--imp {
+      width: 49%;
+      margin-left: 4px;
+
+      text-align: left;
+    }
+
+    &--emo {
+      padding-bottom: 65px;
+    }
+  }
+
+  .review-form__legend {
+    &--contact {
+      margin-bottom: 74px;
+    }
+
+    &--imp {
+      margin-left: 76px;
+    }
+
+    &--contact::before,
+    &--contact::after,
+    &--travel::before,
+    &--travel::after,
+    &--emo::before,
+    &--emo::after {
+      width: 280px;
+    }
+
+    &--travel::before {
+      left: -280px;
+    }
+
+    &--travel::after {
+      right: -280px;
+    }
+  }
+
+  .review-form__box {
+    display: flex;
+  }
+
+  .review-form__box-1,
+  .review-form__box-2 {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+  }
+
+  .review-form__label {
+    &--text-top {
+      margin: 0;
+      padding: 0;
+      padding-right: 16px;
+    }
+
+    &--tel {
+      display: none;
+    }
+
+    &--tel-desktop {
+      display: block;
+    }
+  }
+
+  .review-form__input--contact {
+    width: 315px;
+    margin: 0;
+  }
+
+  .review-form__btn {
+    width: 480px;
+  }
+}
