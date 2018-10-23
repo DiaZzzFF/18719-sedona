@@ -1,6 +1,7 @@
 .gallery {
   @include mobile-grid;
-  @include temporarily;
+
+  background-color: $white;
 }
 
 .gallery__list {
@@ -85,8 +86,6 @@
     padding: 0;
 
     border: none;
-
-    @include temporarily;
 
     &--first {
       width: 648px;

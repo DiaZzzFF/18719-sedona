@@ -1,6 +1,7 @@
 .review-form {
   @include mobile-grid;
-  @include temporarily;
+
+  background-color: $white;
 }
 
 .review-form__item {

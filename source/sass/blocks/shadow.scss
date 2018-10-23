@@ -1,0 +1,17 @@
+.shadow {
+  @include mobile-grid;
+
+  box-shadow: 0 0 20px rgb(219, 219, 219);
+}
+
+@media (min-width: $tablet-width) {
+  .shadow {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .shadow {
+    width: 1200px;
+  }
+}

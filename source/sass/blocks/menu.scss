@@ -2,11 +2,12 @@
   @include ul-style;
 
   background-color: $sky;
-
-  @include temporarily;
 }
 
 .menu__item {
+  border-top: 1px solid rgb(154, 194, 219);
+  border-bottom: 1px solid rgb(103, 143, 168);
+
   &--mobile-none {
     display: none;
   }
@@ -32,6 +33,9 @@
   }
 
   .menu__item {
+    border-top: 0;
+    border-bottom: 0;
+
     &--mobile-none {
       display: block;
       width: 150px;

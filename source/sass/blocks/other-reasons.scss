@@ -1,7 +1,3 @@
-.other-reasons {
-  @include temporarily;
-}
-
 .other-reasons__list {
   @include ul-style;
 

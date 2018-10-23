@@ -1,8 +1,9 @@
 .promo {
-  @include temporarily;
   @include mobile-grid;
 
   padding-bottom: 26px;
+
+  background-color: $white;
 }
 
 .promo__bg {

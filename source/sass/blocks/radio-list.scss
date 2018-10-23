@@ -1,5 +1,7 @@
 .radio-list {
   @include ul-style;
+
+  background-color: $white;
 }
 
 .radio-list__item {

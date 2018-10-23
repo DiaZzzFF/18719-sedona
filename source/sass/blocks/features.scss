@@ -1,7 +1,3 @@
-.features {
-  @include temporarily;
-}
-
 .features__list {
   @include ul-style;
 

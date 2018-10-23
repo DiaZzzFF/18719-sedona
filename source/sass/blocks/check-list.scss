@@ -1,6 +1,7 @@
 .check-list {
   @include ul-style;
-  @include temporarily;
+
+  background-color: $white;
 }
 
 .check-list__item {
