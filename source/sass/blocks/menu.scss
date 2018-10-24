@@ -11,6 +11,10 @@
   &--mobile-none {
     display: none;
   }
+
+  &:last-child {
+    box-shadow: inset 0 -2px 7px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .menu__link {
@@ -19,6 +23,16 @@
 
   line-height: 40px;
   color: $white;
+
+  &:hover {
+    background-color: $dark-sky;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
+
+    background-color: $darkest-sky;
+  }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -41,6 +55,10 @@
       width: 150px;
       height: 56px;
     }
+
+    &:last-child {
+      box-shadow: none;
+    }
   }
 
   .menu__link {
@@ -51,6 +69,25 @@
     font-size: 14px;
     line-height: inherit;
     color: $black;
+
+    &:hover {
+      color: $sky;
+
+      background-color: $white;
+    }
+
+    &--active {
+      color: rgb(118, 99, 87);
+
+      &:hover {
+        color: rgb(96, 78, 67);
+      }
+    }
+
+    &:active,
+    &--active:active {
+      color: rgba($color: $black, $alpha: 0.3);
+    }
   }
 }
 
