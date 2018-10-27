@@ -57,10 +57,24 @@
   width: 22px;
   height: 21px;
   margin-right: 16px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.gallery__svg {
+  width: 22px;
+  height: 21px;
+}
+
+.gallery__svg-color {
+  fill: rgba($color: $black, $alpha: 0.3);
 }
 
 .gallery__likes {
   @include text;
+
+  margin-top: 2px;
 
   font-weight: 700;
   line-height: 24px;
@@ -164,5 +178,9 @@
   .gallery__author,
   .gallery__likes {
     color: $white;
+  }
+
+  .gallery__svg-color {
+    fill: $white;
   }
 }
