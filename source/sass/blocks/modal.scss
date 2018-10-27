@@ -1,3 +1,120 @@
 .modal {
   display: none;
+
+  @include mobile-grid;
+
+  background-color: $white;
+  box-shadow: 0 0 20px rgb(219, 219, 219);
+
+  &--error {
+    min-height: 280px;
+    padding-top: 40px;
+  }
+
+  &--ok {
+    min-height: 323px;
+    padding-top: 43px;
+  }
+}
+
+.modal__heading {
+  @include headline-fix;
+
+  width: 280px;
+  margin: 0 auto;
+
+  margin-bottom: 26px;
+}
+
+.modal__text {
+  @include text;
+
+  width: 230px;
+  margin: 0 auto;
+
+  line-height: 24px;
+  text-align: center;
+
+  &--error {
+    margin-bottom: 23px;
+  }
+
+  &--ok {
+    margin-bottom: 34px;
+  }
+}
+
+.modal__btn-box {
+  padding: 20px;
+
+  background-color: $gray;
+}
+
+.modal__btn {
+  @include sky-btn;
+
+  &--error {
+    width: 180px;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .modal {
+    min-height: 347px;
+    padding-top: 55px;
+
+    &--error {
+      width: 400px;
+    }
+
+    &--ok {
+      width: 640px;
+    }
+  }
+
+  .modal__heading {
+    font-size: 30px;
+    line-height: 40px;
+
+    margin-bottom: 24px;
+
+    &--error {
+      width: 240px;
+    }
+
+    &--ok {
+      width: 420px;
+    }
+  }
+
+  .modal__text {
+    &--error {
+      width: 280px;
+      margin-bottom: 33px;
+    }
+
+    &--ok {
+      width: 420px;
+    }
+  }
+
+  .modal__br {
+    display: none;
+  }
+
+  .modal__btn-box {
+    padding: 44px;
+  }
+
+  .modal__btn {
+    &--error {
+      width: 272px;
+    }
+
+    &--ok {
+      width: 458px;
+    }
+  }
 }
