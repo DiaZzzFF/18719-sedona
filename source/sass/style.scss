@@ -42,7 +42,7 @@ body {
   text-align: center;
 
   /* Оформление */
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(242, 242, 242);
 
   /* Анимация */
 
@@ -79,6 +79,10 @@ input[type="radio"].visually-hidden {
 
 @import "../sass/variables.scss";
 @import "../sass/mixins.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< shadow >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@import "../sass/blocks/shadow.scss";
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 

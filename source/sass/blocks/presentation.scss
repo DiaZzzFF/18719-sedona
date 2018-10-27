@@ -3,7 +3,7 @@
 
   padding: 33px 0;
 
-  @include temporarily;
+  background-color: $white;
 }
 
 .presentation__heading {
@@ -42,35 +42,88 @@
   margin: 0 20px;
 }
 
+/* <<<<< presentation__scrollbar >>>>> */
+
 .presentation__scrollbar {
   position: absolute;
   top: -45px;
   z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   height: 45px;
 
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.presentation__range {
+  width: 235px;
+  height: 3px;
+
+  background-color: rgba($white, 0.2);
+}
+
+.presentation__current {
+  position: absolute;
+  left: 58px;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: $white;
+  border-radius: 50%;
+}
+
+/* <<<<< presentation__controls >>>>> */
+
 .presentation__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   height: 66px;
+  padding: 0 23px 0 25px;
 
   background-color: rgb(245, 245, 245);
 }
 
+.presentation__btn {
+  height: 20px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
 .presentation__replay {
   width: 16px;
-  height: 20px;
 }
 
 .presentation__subtitles {
   width: 32px;
-  height: 20px;
+  margin-left: auto;
+  margin-right: 31px;
 }
 
 .presentation__fullscreen {
   width: 20px;
-  height: 20px;
+}
+
+.presentation__svg-color {
+  fill: rgb(92, 104, 112);
+
+  &:hover {
+    fill: $black-regular;
+  }
+
+  &:active {
+    fill: rgba($black-regular, 0.3);
+  }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -105,6 +158,15 @@
     margin: 0;
   }
 
+  .presentation__range {
+    width: 389px;
+    margin-left: -73px;
+  }
+
+  .presentation__current {
+    left: 206px;
+  }
+
   .presentation__controls {
     position: absolute;
     top: -93px;
@@ -112,30 +174,25 @@
     width: 648px;
     min-height: 93px;
     margin: 0;
+    padding: 0 41px 0 35px;
 
     background-color: transparent;
   }
 
-  .presentation__replay,
-  .presentation__subtitles,
-  .presentation__fullscreen {
-    position: absolute;
-    top: 36px;
+  .presentation__btn {
     z-index: 2;
-
-    background-color: $white;
   }
 
-  .presentation__replay {
-    left: 35px;
-  }
+  .presentation__svg-color {
+    fill: $white;
 
-  .presentation__subtitles {
-    right: 124px;
-  }
+    &:hover {
+      fill: rgba($white, 0.6);
+    }
 
-  .presentation__fullscreen {
-    right: 41px;
+    &:active {
+      fill: rgba($white, 0.3);
+    }
   }
 }
 
@@ -154,5 +211,9 @@
   .presentation__scrollbar,
   .presentation__controls {
     width: 800px;
+  }
+
+  .presentation__range {
+    width: 540px;
   }
 }

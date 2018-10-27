@@ -1,6 +1,7 @@
 .hotels {
-  @include temporarily;
   @include mobile-grid;
+
+  background-color: $white;
 }
 
 .hotels__text-box {
@@ -38,6 +39,10 @@
 
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.hotels__live-map {
+  width: 100%;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

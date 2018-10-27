@@ -28,11 +28,11 @@
     background-color: $dark-sky;
   }
 
-  &:disabled {
+  &:active {
     background-color: $darkest-sky;
   }
 
-  &:disabled .social__link-svg {
+  &:active .social__link-svg {
     fill-opacity: 0.3;
   }
 }

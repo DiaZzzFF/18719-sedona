@@ -1,8 +1,9 @@
 .promo {
-  @include temporarily;
   @include mobile-grid;
 
   padding-bottom: 26px;
+
+  background-color: $white;
 }
 
 .promo__bg {
@@ -57,6 +58,8 @@
   @include text;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 @media (min-width: $tablet-width) {
   .promo {
     width: 768px;
@@ -96,6 +99,8 @@
     width: 625px;
   }
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (min-width: $desktop-width) {
   .promo {

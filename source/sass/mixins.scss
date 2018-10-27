@@ -47,23 +47,30 @@
 
   background-color: $sky;
   border: none;
-}
 
-@mixin placeholder {
-  padding-left: 22px;
+  cursor: pointer;
 
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $black;
+  &:hover {
+    background-color: $dark-sky;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
+
+    background-color: $darkest-sky;
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    background-color: $dark-gray;
+  }
+
+  &:disabled {
+    background-color: $dark-gray;
+  }
 }
 
 @mixin mobile-grid {
   width: 320px;
   margin: 0 auto;
-}
-
-/* временно */
-@mixin temporarily {
-  outline: 1px solid red;
 }

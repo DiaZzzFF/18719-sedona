@@ -1,9 +1,12 @@
 .check-list {
   @include ul-style;
-  @include temporarily;
+
+  background-color: $white;
 }
 
 .check-list__item {
+  position: relative;
+
   display: flex;
   align-items: center;
 
@@ -22,7 +25,61 @@
 }
 
 .check-list__label {
+  display: flex;
+  align-items: center;
+
+  min-height: 56px;
+  padding-left: 80px;
+
   text-transform: none;
+  cursor: pointer;
+}
+
+.check-list__input + .check-list__label::before,
+.check-list__input:checked + .check-list__label::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 56px;
+  height: 56px;
+
+  cursor: pointer;
+}
+
+.check-list__input + .check-list__label::before {
+  background-color: $gray;
+  border-radius: 7px;
+}
+
+.check-list__input:checked + .check-list__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 16px;
+  background-position: center;
+}
+
+/* :hover */
+
+.check-list__input + .check-list__label:hover::before,
+.check-list__input:checked + .check-list__label:hover::before {
+  background-color: $dark-gray;
+}
+
+/* :active */
+
+.check-list__input + .check-list__label:active::before,
+.check-list__input:checked + .check-list__label:active::before {
+  background-color: rgb(115, 115, 115);
+  opacity: 0.3;
+}
+
+/* :focus */
+
+.check-list__input:focus + .check-list__label {
+  outline: 2px solid rgba(38, 136, 233, 0.5);
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -38,7 +95,7 @@
   }
 
   .check-list__item {
-    width: 200px;
+    min-width: 200px;
     margin: 0;
     margin-bottom: 32px;
 
@@ -61,7 +118,6 @@
   }
 
   .check-list__item {
-    width: auto;
     margin: 0;
 
     &:first-of-type {

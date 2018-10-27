@@ -1,6 +1,35 @@
 .review-form {
   @include mobile-grid;
-  @include temporarily;
+
+  background-color: $white;
+}
+
+.review-form__box-1,
+.review-form__box-2 {
+  position: relative;
+}
+
+.review-form__img-tel,
+.review-form__img-mail {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: block;
+  width: 58px;
+  height: 58px;
+
+  background-color: rgb(230, 230, 230);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review-form__img-tel {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.review-form__img-mail {
+  background-image: url("../img/icon-mail.svg");
 }
 
 .review-form__item {
@@ -62,8 +91,34 @@
   }
 }
 
-.review-form__input {
+.review-form__input,
+.review-form__textarea {
   width: 100%;
+  padding-left: 22px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+
+  background-color: $gray;
+  border: 4px solid $gray;
+
+  &:hover {
+    background-color: $dark-gray;
+    border-color: $dark-gray;
+  }
+
+  &:focus {
+    background-color: $white;
+  }
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.review-form__input {
   height: 58px;
 
   &--name {
@@ -72,24 +127,16 @@
 
   &--contact {
     margin-top: 7px;
-  }
-
-  &::placeholder {
-    @include placeholder;
+    padding-right: 58px;
   }
 }
 
 .review-form__textarea {
-  width: 100%;
   min-height: 160px;
-
   margin-bottom: 44px;
+  padding-top: 14px;
 
-  &::placeholder {
-    @include placeholder;
-
-    padding-top: 14px;
-  }
+  resize: none;
 }
 
 .review-form__btn {
@@ -330,6 +377,14 @@
     align-items: center;
 
     width: 50%;
+  }
+
+  .review-form__img-tel {
+    right: 80px;
+  }
+
+  .review-form__img-mail {
+    right: 3px;
   }
 
   .review-form__label {

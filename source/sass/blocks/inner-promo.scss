@@ -1,8 +1,9 @@
 .inner-promo {
-  @include temporarily;
   @include mobile-grid;
 
   padding-bottom: 10px;
+
+  background-color: $white;
 
   &--photo {
     padding-bottom: 22px;

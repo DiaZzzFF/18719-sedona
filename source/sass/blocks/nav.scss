@@ -2,8 +2,6 @@
   @include mobile-grid;
 
   background-color: $white;
-
-  @include temporarily;
 }
 
 .nav__box-2 {
@@ -29,17 +27,44 @@
   height: 83px;
 }
 
-.nav__toggle {
+.nav--closed .nav__toggle::before,
+.nav--opened .nav__toggle::after {
+  content: "";
+
   position: absolute;
-  top: 17px;
   right: 20px;
 
-  display: block;
   width: 23px;
-  height: 21px;
+  height: 22px;
 
-  background-color: $sky;
   border: none;
+
+  cursor: pointer;
+}
+
+.nav--closed .nav__toggle::before {
+  top: 17px;
+
+
+  background-image: url("../img/icon-menu.svg");
+}
+
+.nav--opened .nav__toggle::after {
+  top: -214px;
+
+  background-image: url("../img/icon-cross.svg");
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< js-menu >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width-only) {
+  .nav--closed .menu__item {
+    display: none;
+  }
+
+  .nav--nojs .menu__item {
+    display: block;
+  }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

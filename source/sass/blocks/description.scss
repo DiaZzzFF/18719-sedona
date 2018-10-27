@@ -1,6 +1,7 @@
 .description {
-  @include temporarily;
   @include mobile-grid;
+
+  background-color: $white;
 }
 
 .description__list {
