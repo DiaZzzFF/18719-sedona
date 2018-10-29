@@ -41,7 +41,11 @@
 
           <div class="nav__box-2">
             <a class="nav__logo" href="index.html">
-              <img class="nav__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="nav__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
+              </picture>
             </a>
 
             <button class="nav__toggle" type="button" aria-label="Открыть / Закрыть меню"></button>
@@ -297,5 +301,6 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

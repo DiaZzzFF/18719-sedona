@@ -20,10 +20,10 @@
   position: absolute;
 
   display: block;
-  width: 102px;
 }
 
 .nav__logo-img {
+  width: 102px;
   height: 83px;
 }
 
@@ -95,5 +95,10 @@
 @media (min-width: $desktop-width) {
   .nav {
     width: 1200px;
+  }
+
+  .nav__logo-img {
+    width: 188px;
+    height: 96px;
   }
 }
