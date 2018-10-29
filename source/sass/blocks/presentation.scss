@@ -25,12 +25,6 @@
   line-height: 24px;
 }
 
-.presentation__img {
-  width: 320px;
-  height: 201px;
-  margin: 0 auto;
-}
-
 .presentation__box {
   position: relative;
   z-index: 1;
@@ -144,10 +138,6 @@
   .presentation__text {
     width: 420px;
     margin-bottom: 73px;
-  }
-
-  .presentation__img {
-    height: 500px;
   }
 
   .presentation__scrollbar {

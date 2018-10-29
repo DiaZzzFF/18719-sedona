@@ -20,10 +20,6 @@
   }
 }
 
-.gallery__img {
-  height: 280px;
-}
-
 .gallery__text-box {
   width: 200px;
 }
@@ -60,6 +56,8 @@
 
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .gallery__svg {
@@ -107,14 +105,6 @@
 
     &:nth-of-type(3) .gallery__descr-box {
       background-color: rgb(234, 234, 234);
-    }
-  }
-
-  .gallery__img {
-    height: 267px;
-
-    &--first {
-      height: 400px;
     }
   }
 
