@@ -102,10 +102,6 @@
     flex-grow: 1;
   }
 
-  .description__img {
-    height: 256px;
-  }
-
   .description__bg-decoration {
     display: none;
   }
@@ -132,5 +128,15 @@
 
   .description__text--second {
     width: 270px;
+  }
+
+  .description__img-box {
+    height: 256px;
+
+    overflow: hidden;
+  }
+
+  .description__img {
+    margin-top: -72px;
   }
 }
