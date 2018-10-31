@@ -92,23 +92,7 @@
   border: none;
 
   cursor: pointer;
-}
 
-.presentation__replay {
-  width: 16px;
-}
-
-.presentation__subtitles {
-  width: 32px;
-  margin-left: auto;
-  margin-right: 31px;
-}
-
-.presentation__fullscreen {
-  width: 20px;
-}
-
-.presentation__svg-color {
   fill: rgb(92, 104, 112);
 
   &:hover {
@@ -118,7 +102,22 @@
   &:active {
     fill: rgba($black-regular, 0.3);
   }
+
+  &--replay {
+    width: 16px;
+  }
+
+  &--subtitles {
+    width: 32px;
+    margin-left: auto;
+    margin-right: 31px;
+  }
+
+  &--fullscreen {
+    width: 20px;
+  }
 }
+
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -171,9 +170,7 @@
 
   .presentation__btn {
     z-index: 2;
-  }
 
-  .presentation__svg-color {
     fill: $white;
 
     &:hover {
