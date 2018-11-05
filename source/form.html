@@ -91,12 +91,12 @@
 
               <label class="review-form__label review-form__label--name">
                 Имя*:
-                <input class="review-form__input review-form__input--name" type="text" name="name" placeholder="Петр">
+                <input class="review-form__input review-form__input--name" type="text" name="name" placeholder="Петр" required>
               </label>
 
               <label class="review-form__label review-form__label--name">
                 Фамилия*:
-                <input class="review-form__input review-form__input--name" type="text" name="surname" placeholder="Иванов">
+                <input class="review-form__input review-form__input--name" type="text" name="surname" placeholder="Иванов" required>
               </label>
 
               <label class="review-form__label review-form__label--name">
@@ -116,7 +116,7 @@
                   <label class="review-form__label review-form__label--text-top review-form__label--tel-desktop" for="user-tel">
                     Телефон*:
                   </label>
-                  <input class="review-form__input review-form__input--contact" type="tel" name="tel" id="user-tel" placeholder="Введите телефон">
+                  <input class="review-form__input review-form__input--contact" type="tel" name="tel" id="user-tel" placeholder="Введите телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат: 999-888-77-66" required>
                   <div class="review-form__img-tel"></div>
                 </div>
 
@@ -124,7 +124,7 @@
                   <label class="review-form__label review-form__label--text-top review-form__label--contact-email" for="user-email">
                     Электронная почта*:
                   </label>
-                  <input class="review-form__input review-form__input--contact" type="email" name="email" id="user-email" placeholder="Введите e-mail">
+                  <input class="review-form__input review-form__input--contact" type="email" name="email" id="user-email" placeholder="Введите e-mail" required>
                   <div class="review-form__img-mail"></div>
                 </div>
               </div>
@@ -135,17 +135,17 @@
 
               <ul class="review-form__radio-list radio-list">
                 <li class="radio-list__item">
-                  <input class="radio-list__input visually-hidden" type="radio" name="choice" id="user-positive" checked>
+                  <input class="radio-list__input visually-hidden" type="radio" name="choice" id="user-positive" value="positive" checked>
                   <label class="radio-list__label" for="user-positive">Скорее положительное</label>
                 </li>
 
                 <li class="radio-list__item">
-                  <input class="radio-list__input visually-hidden" type="radio" name="choice" id="user-negative">
+                  <input class="radio-list__input visually-hidden" type="radio" name="choice" id="user-negative" value="negative">
                   <label class="radio-list__label" for="user-negative">Скорее отрицательное</label>
                 </li>
 
                 <li class="radio-list__item">
-                  <input class="radio-list__input visually-hidden" type="radio" name="choice" id="user-difficult">
+                  <input class="radio-list__input visually-hidden" type="radio" name="choice" id="user-difficult" value="difficult">
                   <label class="radio-list__label" for="user-difficult">Затрудняюсь ответить</label>
                 </li>
               </ul>
