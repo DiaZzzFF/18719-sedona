@@ -45,6 +45,14 @@ gulp.task("webp", function () {
   .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("sprite-change", function () {
+  return gulp.src("source/img/icon-{twitter,facebook,youtube,logo-htmlacademy,like,video-replay,video-subtitles,video-fullscreen}.svg")
+  .pipe(imagemin([
+    imagemin.svgo()
+  ]))
+  .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("sprite", function () {
   return gulp.src("build/img/icon-{twitter,facebook,youtube,logo-htmlacademy,like,video-replay,video-subtitles,video-fullscreen}.svg")
   .pipe(svgstore({
@@ -86,7 +94,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/img/icon-{twitter,facebook,youtube,logo-htmlacademy,like,video-replay,video-subtitles,video-fullscreen}.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/img/icon-{twitter,facebook,youtube,logo-htmlacademy,like,video-replay,video-subtitles,video-fullscreen}.svg", gulp.series("sprite-change", "sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
