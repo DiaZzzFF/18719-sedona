@@ -61,6 +61,7 @@
 
 .presentation__current {
   position: absolute;
+  top: 19px;
   left: 58px;
 
   width: 9px;
@@ -118,7 +119,6 @@
   }
 }
 
-
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (min-width: $tablet-width) {
@@ -153,6 +153,7 @@
   }
 
   .presentation__current {
+    top: 42px;
     left: 206px;
   }
 
