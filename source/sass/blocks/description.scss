@@ -123,11 +123,13 @@
   }
 
   .description__text {
-    width: 310px;
-  }
+    &--second {
+      width: 310px;
+    }
 
-  .description__text--second {
-    width: 270px;
+    &--bridge {
+      width: 270px;
+    }
   }
 
   .description__img-box {
