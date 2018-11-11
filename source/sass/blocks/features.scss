@@ -132,6 +132,10 @@
 
     text-align: center;
   }
+
+  .features__br {
+    display: block;
+  }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -139,5 +143,9 @@
 @media (min-width: $desktop-width) {
   .features__item {
     width: 400px;
+  }
+
+  .features__text {
+    width: 300px;
   }
 }

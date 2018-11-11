@@ -25,10 +25,6 @@
   line-height: 24px;
 }
 
-.hotels__br {
-  display: none;
-}
-
 .hotels__link {
   @include sky-btn;
 }
@@ -74,7 +70,7 @@
   }
 
   .hotels__br {
-    display: inline;
+    display: block;
   }
 
   .hotels__link {

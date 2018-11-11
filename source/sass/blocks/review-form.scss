@@ -321,7 +321,9 @@
 
   .review-form__item {
     &--name {
-      width: 49.5%;
+      justify-self: end;
+
+      width: 50%;
       padding-left: 79px;
       margin-bottom: 68px;
     }
@@ -383,10 +385,6 @@
 
   .review-form__img-tel {
     right: 80px;
-  }
-
-  .review-form__img-mail {
-    right: 3px;
   }
 
   .review-form__label {
