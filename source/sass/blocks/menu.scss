@@ -37,12 +37,14 @@
   .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
 
     background-color: $white;
   }
 
   .menu__item {
+    width: 20%;
+
     border-top: 0;
     border-bottom: 0;
 
@@ -50,13 +52,12 @@
       box-shadow: none;
     }
 
-    &:nth-child(2) {
-      margin-right: auto;
+    &:nth-of-type(4n+2) {
+      margin-right: 20%;
     }
   }
 
   .menu__link {
-    min-width: 153px;
     min-height: 56px;
     padding-top: 13px;
 
