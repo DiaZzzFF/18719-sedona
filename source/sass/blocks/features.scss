@@ -7,58 +7,36 @@
 }
 
 .features__item {
-  padding: 0 20px;
-}
-
-.features__icon {
-  float: left;
+  padding: 29px 20px 0 70px;
 
   background-repeat: no-repeat;
 
   &--house {
-    width: 39px;
-    height: 37px;
-    margin-top: 26px;
-    margin-left: 1px;
-    margin-right: 9px;
-
     background-image: url("../img/icon-house.svg");
     background-size: 39px 37px;
+    background-position: 21px 26px;
   }
 
   &--gift {
-    width: 32px;
-    height: 38px;
-    margin-top: 17px;
-    margin-left: 5px;
-    margin-right: 13px;
-
     background-image: url("../img/icon-gift.svg");
     background-size: 32px 38px;
+    background-position: 25px 18px;
   }
 
   &--food {
-    width: 40px;
-    height: 35px;
-    margin-top: 23px;
-    margin-left: -2px;
-    margin-right: 12px;
-
     background-image: url("../img/icon-burger.svg");
     background-size: 40px 35px;
+    background-position: 18px 24px;
   }
 }
 
 .features__heading {
   @include headline-fix;
 
-  padding-top: 35px;
-
   text-align: left;
 
-  &--second,
-  &--third {
-    padding-top: 28px;
+  &--first {
+    padding-top: 6px;
   }
 }
 
@@ -66,10 +44,13 @@
   @include text-2;
 
   margin-top: 14px;
-  margin-left: 50px;
 
   text-align: left;
   color: $black-regular;
+}
+
+.features__br {
+  display: none;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -84,38 +65,25 @@
   .features__item {
     width: 256px;
     min-height: 330px;
-
-    &--inverted {
-      order: 1;
-    }
-  }
-
-  .features__icon {
-    float: none;
-
-    margin: 60px auto 27px;
+    padding: 159px 45px 27px;
 
     &--house {
-      width: 75px;
-      height: 72px;
-
       background-size: 75px 72px;
+      background-position: center 60px;
     }
 
     &--food {
-      width: 77px;
-      height: 68px;
-      margin-top: 63px;
-
       background-size: 77px 68px;
+      background-position: center 63px;
     }
 
     &--gift {
-      width: 64px;
-      height: 75px;
-      margin-top: 57px;
-
       background-size: 64px 75px;
+      background-position: center 57px;
+    }
+
+    &--inverted {
+      order: 1;
     }
   }
 

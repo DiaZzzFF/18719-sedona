@@ -34,6 +34,10 @@
   }
 }
 
+.other-reasons__br {
+  display: none;
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (min-width: $tablet-width) {
@@ -69,7 +73,7 @@
   }
 
   .other-reasons__br {
-    display: block;
+    display: inline;
   }
 }
 

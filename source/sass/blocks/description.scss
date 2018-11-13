@@ -18,18 +18,12 @@
   padding-bottom: 40px;
 
   background-color: $sky;
-}
 
-.description__bg-decoration {
-  position: absolute;
-  top: 0;
-
-  min-width: 320px;
-  min-height: 16px;
-
-  background-color: transparent;
-  background-image: url("../img/bg-triangle.svg");
-  background-position: bottom;
+  &--bg-triangle {
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -21px;
+  }
 }
 
 .description__heading {
@@ -79,7 +73,14 @@
     flex-grow: 0;
 
     width: 256px;
+    height: 256px;
     margin-bottom: 0;
+
+    overflow-y: auto;
+
+    &--bg-triangle {
+      background-image: none;
+    }
 
     &--inverted {
       order: 1;
@@ -106,10 +107,6 @@
 
   .description__img-box {
     flex-grow: 1;
-  }
-
-  .description__bg-decoration {
-    display: none;
   }
 }
 
